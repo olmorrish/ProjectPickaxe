@@ -1,5 +1,6 @@
 # Project Pickaxe
 - - -
 ## Things to do:
-[x] Make Readme
-[ ] Make gaem
+- [x] Make Readme  
+- [ ] Make gaem  
+- [ ] Git gud  
