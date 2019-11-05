@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class Player : MonoBehaviour
 {
 
@@ -13,12 +12,13 @@ public class Player : MonoBehaviour
     public float speed;
     public float jumpHeight;
     public int pickaxeLevel;
+    public float pickRange;
 
     public float moveBuffer; // How far the axis needs to be to start moving
 
     private Rigidbody2D rb;
 
-    private float playerFacing;
+    public float playerFacing;
 
     private bool grounded;
     private bool canWallJump;
@@ -50,10 +50,11 @@ public class Player : MonoBehaviour
             rb.velocity = new Vector2(0f, rb.velocity.y);
         }
 
-        if (Input.GetKeyDown(jump) && grounded) {
-            Jump();
-        } else if (Input.GetKeyDown(jump) && canWallJump && wallJumpCount > 0) {
+        if (Input.GetKeyDown(jump) && inRange("ENV_WALL", pickRange) && wallJumpCount > 0)
+        {
             WallJump();
+        } else if (Input.GetKeyDown(jump) && grounded) {
+            Jump();
         }
     }
 
@@ -61,10 +62,15 @@ public class Player : MonoBehaviour
     // Movement functions
     //***************************************
     private void UpdateFacing() {
-        if (Input.GetKey(left)) {
+        if (Input.GetAxisRaw("Horizontal") < 0f) {
+
             playerFacing = -1f;
-        } else if (Input.GetKey(right)) {
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            gameObject.GetComponentsInChildren<BoxCollider2D>()[1].offset = new Vector2(-0.25f, 0.15f);
+        } else if (Input.GetAxisRaw("Horizontal") > 0f) {
             playerFacing = 1f;
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            gameObject.GetComponentsInChildren<BoxCollider2D>()[1].offset = new Vector2(0.25f, 0.15f);
         }
     }
     private void Jump() {
@@ -81,11 +87,13 @@ public class Player : MonoBehaviour
             wallJumpCount = 1;
         }
 
+        /*
         if (collision.gameObject.CompareTag("ENV_WALL")) {
             canWallJump = true;
         } else if (collision.gameObject.CompareTag("ENV_WALL_NOGRIP")) {
             // Do something?
         }
+        */
 
         if (collision.gameObject.CompareTag("ENV_BREAKABLE")) {
             if (Input.GetKeyDown(action)) {
@@ -102,11 +110,13 @@ public class Player : MonoBehaviour
             wallJumpCount = 1;
         }
 
+        /*
         if (collision.gameObject.CompareTag("ENV_WALL")) {
             if (Input.GetKey(action)) {
                 rb.velocity = new Vector2(rb.velocity.x, 0f);
             }
         }
+        */
 
         if (collision.gameObject.CompareTag("ENV_BREAKABLE")) {
             if (Input.GetKeyDown(action)) {
@@ -120,8 +130,26 @@ public class Player : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("ENV_GROUND")) {
             grounded = false;
-        } else if (collision.gameObject.CompareTag("ENV_WALL")) {
+        } 
+        /*
+        else if (collision.gameObject.CompareTag("ENV_WALL")) {
             canWallJump = false;
         }
+        */
+    }
+
+    private bool inRange(string tag, float minDistance)
+    {
+        GameObject[] objTag = GameObject.FindGameObjectsWithTag(tag);
+
+        for (int i = 0; i < objTag.Length; ++i)
+        {
+            if (Vector3.Distance(transform.position, objTag[i].transform.position) <= Mathf.Abs(minDistance))
+                return true;
+        }
+
+        return false;
     }
 }
+
+
