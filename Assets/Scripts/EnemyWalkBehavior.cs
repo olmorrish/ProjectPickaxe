@@ -28,12 +28,14 @@ public class EnemyWalkBehavior : MonoBehaviour
         if(body.velocity.x == 0.0) {
             if (enemyDir == Direction.left) {
                 enemyDir = Direction.right;
-                sprite.flipX = !sprite.flipX;
+                //sprite.flipX = !sprite.flipX;
+                transform.localScale = new Vector3(-1*(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
                 
             else if (enemyDir == Direction.right) {
                 enemyDir = Direction.left;
-                sprite.flipX = !sprite.flipX;
+                //sprite.flipX = !sprite.flipX;
+                transform.localScale = new Vector3(-1 * (transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
                 
         }
