@@ -1,43 +1,31 @@
 fileFormatVersion: 2
-guid: 270af668ca0218e41bafd17676cfe111
+guid: 77e9cb7079923e3448904885d8814463
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8386587460383133869
-    second: sponge_0
+      213: 1712774111904305647
+    second: finny_0
   - first:
-      213: 1710626253739616012
-    second: sponge_1
+      213: 7670733803078347055
+    second: finny_1
   - first:
-      213: 7544058419773647294
-    second: sponge_2
+      213: -4550267940043620056
+    second: finny_2
   - first:
-      213: 1422929293280009265
-    second: sponge_3
+      213: 829713883591521305
+    second: finny_3
   - first:
-      213: -274737183732456654
-    second: sponge_4
+      213: 5653593744067423098
+    second: finny_4
   - first:
-      213: 1991221520445327756
-    second: sponge_5
+      213: 788401884729536272
+    second: finny_5
   - first:
-      213: 8978264670534907331
-    second: sponge_6
+      213: 2210812893234626102
+    second: finny_6
   - first:
-      213: -1924879465264001089
-    second: sponge_7
-  - first:
-      213: 7812705804826153829
-    second: sponge_8
-  - first:
-      213: 5774604885002230986
-    second: sponge_9
-  - first:
-      213: -6175279138366655878
-    second: sponge_10
-  - first:
-      213: -4793373617220237955
-    second: sponge_11
+      213: -4797687741296238979
+    second: finny_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -122,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sponge_0
+      name: finny_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +124,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53750d05bacba404883e95aca4ef3189
-      internalID: 8386587460383133869
+      spriteID: 60631d1a79dcb854680b814e0de8373b
+      internalID: 1712774111904305647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sponge_1
+      name: finny_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c820378b53bccd747a260c52cc678f9e
+      internalID: 7670733803078347055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finny_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +166,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d532633f888db54392c199a23478f22
-      internalID: 1710626253739616012
+      spriteID: 5e161a7758a93584db55b912417e968a
+      internalID: -4550267940043620056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sponge_2
+      name: finny_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da68c361f1c19c409cce3e51d2c683a
+      internalID: 829713883591521305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finny_4
       rect:
         serializedVersion: 2
         x: 128
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +208,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b020a08bb37c954e9dce0e307fef49a
-      internalID: 7544058419773647294
+      spriteID: 3823f843020a7b14f9c9bb5c30befd80
+      internalID: 5653593744067423098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sponge_3
+      name: finny_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb38b229a755977448109a1f4990baa3
+      internalID: 788401884729536272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finny_6
       rect:
         serializedVersion: 2
         x: 192
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0eccd17cb7514ba4199cb2adf54b77b4
-      internalID: 1422929293280009265
+      spriteID: d44c1813ea20acb43995b4698b96448e
+      internalID: 2210812893234626102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sponge_4
+      name: finny_7
       rect:
         serializedVersion: 2
-        x: 256
+        x: 224
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,155 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d5ea0c6d3a8f4d4798d82c2d5585956
-      internalID: -274737183732456654
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sponge_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e072e1dd2aa7644ea4782903f22e16e
-      internalID: 1991221520445327756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sponge_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 538f9251a4ce35d4dbc211a8e790aacb
-      internalID: 8978264670534907331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sponge_7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c71e82e19b6b364d9cdeb8aac86eb06
-      internalID: -1924879465264001089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sponge_8
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5fb14ecca9553b4fbaf980c7b4a872d
-      internalID: 7812705804826153829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sponge_9
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81db029bae74c1b4b9e494f2c7cb2fc3
-      internalID: 5774604885002230986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sponge_10
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe5445df603cfb54da84dd9d5927594e
-      internalID: -6175279138366655878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sponge_11
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 793d96e7556793145acc9e04dcedecea
-      internalID: -4793373617220237955
+      spriteID: c565c3b3340a0ef4bb129dce5434a3d1
+      internalID: -4797687741296238979
       vertices: []
       indices: 
       edges: []

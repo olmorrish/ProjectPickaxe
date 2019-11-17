@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: 270af668ca0218e41bafd17676cfe111
+guid: 30287466374d0864cb6609272cfdbbe3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8386587460383133869
-    second: sponge_0
+      213: 2383509880101189496
+    second: anemone_0
   - first:
-      213: 1710626253739616012
-    second: sponge_1
+      213: 7134875521067129464
+    second: anemone_1
   - first:
-      213: 7544058419773647294
-    second: sponge_2
+      213: 4393420153742976970
+    second: anemone_2
   - first:
-      213: 1422929293280009265
-    second: sponge_3
+      213: 5209244676016083820
+    second: anemone_3
   - first:
-      213: -274737183732456654
-    second: sponge_4
+      213: -4722670175846015791
+    second: anemone_4
   - first:
-      213: 1991221520445327756
-    second: sponge_5
+      213: -5353445397659336502
+    second: anemone_5
   - first:
-      213: 8978264670534907331
-    second: sponge_6
+      213: -3349448843354895017
+    second: anemone_6
   - first:
-      213: -1924879465264001089
-    second: sponge_7
+      213: -175307692027180317
+    second: anemone_7
   - first:
-      213: 7812705804826153829
-    second: sponge_8
+      213: 2951903789589770119
+    second: anemone_8
   - first:
-      213: 5774604885002230986
-    second: sponge_9
+      213: 3102299387190112776
+    second: anemone_9
   - first:
-      213: -6175279138366655878
-    second: sponge_10
+      213: -9143608205853237872
+    second: anemone_10
   - first:
-      213: -4793373617220237955
-    second: sponge_11
+      213: -7713631169509286579
+    second: anemone_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -122,7 +122,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sponge_0
+      name: anemone_0
       rect:
         serializedVersion: 2
         x: 0
@@ -136,14 +136,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53750d05bacba404883e95aca4ef3189
-      internalID: 8386587460383133869
+      spriteID: 939e34cace78d5044a2aea01c8a8da7d
+      internalID: 2383509880101189496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sponge_1
+      name: anemone_1
       rect:
         serializedVersion: 2
         x: 64
@@ -157,14 +157,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d532633f888db54392c199a23478f22
-      internalID: 1710626253739616012
+      spriteID: 82452f0eafd2a874b970eeb97eb3ff1d
+      internalID: 7134875521067129464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sponge_2
+      name: anemone_2
       rect:
         serializedVersion: 2
         x: 128
@@ -178,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b020a08bb37c954e9dce0e307fef49a
-      internalID: 7544058419773647294
+      spriteID: 8959b490909083f488cd153bb3366ef1
+      internalID: 4393420153742976970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sponge_3
+      name: anemone_3
       rect:
         serializedVersion: 2
         x: 192
@@ -199,14 +199,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0eccd17cb7514ba4199cb2adf54b77b4
-      internalID: 1422929293280009265
+      spriteID: 9cc5220f55aa1be49908e5f4d1730cf3
+      internalID: 5209244676016083820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sponge_4
+      name: anemone_4
       rect:
         serializedVersion: 2
         x: 256
@@ -220,14 +220,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d5ea0c6d3a8f4d4798d82c2d5585956
-      internalID: -274737183732456654
+      spriteID: 11f7ee2fc96af884a97199b108469565
+      internalID: -4722670175846015791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sponge_5
+      name: anemone_5
       rect:
         serializedVersion: 2
         x: 320
@@ -241,14 +241,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e072e1dd2aa7644ea4782903f22e16e
-      internalID: 1991221520445327756
+      spriteID: bd4187f43b57bfd4dad62738943019f6
+      internalID: -5353445397659336502
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sponge_6
+      name: anemone_6
       rect:
         serializedVersion: 2
         x: 384
@@ -262,14 +262,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 538f9251a4ce35d4dbc211a8e790aacb
-      internalID: 8978264670534907331
+      spriteID: 106e7d2c4dbc0aa44a2980cb2687cab7
+      internalID: -3349448843354895017
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sponge_7
+      name: anemone_7
       rect:
         serializedVersion: 2
         x: 448
@@ -283,14 +283,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c71e82e19b6b364d9cdeb8aac86eb06
-      internalID: -1924879465264001089
+      spriteID: 428989d087f1bbb4686b51986f115481
+      internalID: -175307692027180317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sponge_8
+      name: anemone_8
       rect:
         serializedVersion: 2
         x: 512
@@ -304,14 +304,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5fb14ecca9553b4fbaf980c7b4a872d
-      internalID: 7812705804826153829
+      spriteID: 3a51c9fe725f9564ba2a152904edb694
+      internalID: 2951903789589770119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sponge_9
+      name: anemone_9
       rect:
         serializedVersion: 2
         x: 576
@@ -325,14 +325,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81db029bae74c1b4b9e494f2c7cb2fc3
-      internalID: 5774604885002230986
+      spriteID: 116a8c77155336c4bacb252661bb3b32
+      internalID: 3102299387190112776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sponge_10
+      name: anemone_10
       rect:
         serializedVersion: 2
         x: 640
@@ -346,14 +346,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe5445df603cfb54da84dd9d5927594e
-      internalID: -6175279138366655878
+      spriteID: 80503316ba1e6974ab51c9ea30bad2e3
+      internalID: -9143608205853237872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sponge_11
+      name: anemone_11
       rect:
         serializedVersion: 2
         x: 704
@@ -367,8 +367,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 793d96e7556793145acc9e04dcedecea
-      internalID: -4793373617220237955
+      spriteID: 40848b5b83b7f5e43855cf9fc1b1bd6e
+      internalID: -7713631169509286579
       vertices: []
       indices: 
       edges: []
