@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     public float moveBuffer; // How far the axis needs to be to start moving
 
     private Rigidbody2D rb;
+    private TriggerScript ts;
 
     private float playerFacing;
 
@@ -28,6 +29,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        ts = gameObject.GetComponent<TriggerScript>();
         grounded = false;
         canWallJump = false;
         wallJumpCount = 1;
@@ -55,6 +57,7 @@ public class Player : MonoBehaviour
         } else if (Input.GetKeyDown(jump) && canWallJump && wallJumpCount > 0) {
             WallJump();
         }
+
     }
 
     //***************************************
@@ -86,14 +89,6 @@ public class Player : MonoBehaviour
         } else if (collision.gameObject.CompareTag("ENV_WALL_NOGRIP")) {
             // Do something?
         }
-
-        if (collision.gameObject.CompareTag("ENV_BREAKABLE")) {
-            if (Input.GetKeyDown(action)) {
-                if (pickaxeLevel >= collision.gameObject.GetComponent<Wall_Breakable_Script>().GetRequiredPickaxeLevel()) {
-                    collision.gameObject.GetComponent<Wall_Breakable_Script>().TakeDamage(1f);
-                }
-            }
-        }
     }
 
     private void OnCollisionStay2D(Collision2D collision) {
@@ -105,14 +100,6 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("ENV_WALL")) {
             if (Input.GetKey(action)) {
                 rb.velocity = new Vector2(rb.velocity.x, 0f);
-            }
-        }
-
-        if (collision.gameObject.CompareTag("ENV_BREAKABLE")) {
-            if (Input.GetKeyDown(action)) {
-                if (pickaxeLevel >= collision.gameObject.GetComponent<Wall_Breakable_Script>().GetRequiredPickaxeLevel()) {
-                    collision.gameObject.GetComponent<Wall_Breakable_Script>().TakeDamage(1f);
-                }
             }
         }
     }
