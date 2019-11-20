@@ -8,6 +8,7 @@ public class PhysicsCust : MonoBehaviour
     public float gravityScale = 1f;
     public float minGroundNormalY = .65f;
 
+    protected Vector2 targetVelocity;
     protected bool grounded;
     protected Vector2 groundNormal;
 
@@ -38,7 +39,13 @@ public class PhysicsCust : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        targetVelocity = Vector2.zero;
+        ComputeVelocity();
+    }
+
+    protected virtual void ComputeVelocity()
+    {
+
     }
 
     void FixedUpdate()
@@ -46,11 +53,19 @@ public class PhysicsCust : MonoBehaviour
         // Gravity
         velocity += gravityScale * Physics2D.gravity * Time.deltaTime;
 
+        velocity.x = targetVelocity.x;
+
         grounded = false;
 
         // Gravity
         Vector2 deltaPosition = velocity * Time.deltaTime;
-        Vector2 move = Vector2.up * deltaPosition.y;
+
+        // Calcing vector along slope/ground
+        Vector2 moveAlongGround = new Vector2(groundNormal.y, -groundNormal.x);
+        Vector2 move = moveAlongGround * deltaPosition.x;
+        Movement(move, false);
+
+        move = Vector2.up * deltaPosition.y;
 
         Movement(move, true);
     }
