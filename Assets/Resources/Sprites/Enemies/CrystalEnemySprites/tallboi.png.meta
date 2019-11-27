@@ -1,49 +1,37 @@
 fileFormatVersion: 2
-guid: 1b58f5c49ad71e546bc840b242ba1f3f
+guid: 0274ca664a7b4994889448ca74633630
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -697667685272487711
-    second: geouch_0
+      213: 678136327794927582
+    second: tallboi_0
   - first:
-      213: -2471708470408552923
-    second: geouch_1
+      213: 4707896005166429757
+    second: tallboi_1
   - first:
-      213: -1060990906678265266
-    second: geouch_2
+      213: 559367175844365315
+    second: tallboi_2
   - first:
-      213: 8499092770443918100
-    second: geouch_3
+      213: -2873869838860273024
+    second: tallboi_3
   - first:
-      213: 2861623916580731580
-    second: geouch_4
+      213: 3803518300514084856
+    second: tallboi_4
   - first:
-      213: 7173032426229969640
-    second: geouch_5
+      213: 604816027379875967
+    second: tallboi_5
   - first:
-      213: -6003845776835619258
-    second: geouch_6
+      213: -3878115684908236843
+    second: tallboi_6
   - first:
-      213: -1244522749346116195
-    second: geouch_7
+      213: 7149534135402363176
+    second: tallboi_7
   - first:
-      213: -4347473097983798614
-    second: geouch_8
+      213: -5030954586376384027
+    second: tallboi_8
   - first:
-      213: 3110260513798024273
-    second: geouch_9
-  - first:
-      213: 292643076267146998
-    second: geouch_10
-  - first:
-      213: 995091311754500542
-    second: geouch_11
-  - first:
-      213: 6664075025237310289
-    second: geouch_12
-  - first:
-      213: 2593871042806088983
-    second: geouch_13
+      213: -6299379394355325740
+    second: tallboi_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -128,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: geouch_0
+      name: tallboi_0
       rect:
         serializedVersion: 2
         x: 0
@@ -142,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3626615c7342e9a4c850e5475eb395c4
-      internalID: -697667685272487711
+      spriteID: 4038cb3ee2c3538439a3c98ab3a687f8
+      internalID: 678136327794927582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geouch_1
+      name: tallboi_1
       rect:
         serializedVersion: 2
         x: 64
@@ -163,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1440d84e9beecf64cb48759b8f762f0f
-      internalID: -2471708470408552923
+      spriteID: 7ae8e6fa278ad3f45a2b066bff8ce0c7
+      internalID: 4707896005166429757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geouch_2
+      name: tallboi_2
       rect:
         serializedVersion: 2
         x: 128
@@ -184,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 504869b78f062c14c944ad5365ed0a44
-      internalID: -1060990906678265266
+      spriteID: b64163dfeb068784bad19867249d3623
+      internalID: 559367175844365315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geouch_3
+      name: tallboi_3
       rect:
         serializedVersion: 2
         x: 192
@@ -205,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5aeca35b1f1b9db46b67049af34b5ac1
-      internalID: 8499092770443918100
+      spriteID: fa2f298dc034d0a4ab6e424d539d5035
+      internalID: -2873869838860273024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geouch_4
+      name: tallboi_4
       rect:
         serializedVersion: 2
         x: 256
@@ -226,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00d48f8587dd7154a80130f836cda29c
-      internalID: 2861623916580731580
+      spriteID: 372a127006b28294da1ddd604a2a178f
+      internalID: 3803518300514084856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geouch_5
+      name: tallboi_5
       rect:
         serializedVersion: 2
         x: 320
@@ -247,14 +235,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 672f6bd906e073443b5808216c221cba
-      internalID: 7173032426229969640
+      spriteID: f743173f1357dc4428edc3a08c06d4ce
+      internalID: 604816027379875967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geouch_6
+      name: tallboi_6
       rect:
         serializedVersion: 2
         x: 384
@@ -268,14 +256,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83d125db988c9544da3d58fd64d059a6
-      internalID: -6003845776835619258
+      spriteID: bcab21641eae7804bb6a771bc86ae8a9
+      internalID: -3878115684908236843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geouch_7
+      name: tallboi_7
       rect:
         serializedVersion: 2
         x: 448
@@ -289,14 +277,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8a081409ecd56d40ba501c87b453343
-      internalID: -1244522749346116195
+      spriteID: 99965c2d2f781cd43918b6d5536a9acb
+      internalID: 7149534135402363176
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geouch_8
+      name: tallboi_8
       rect:
         serializedVersion: 2
         x: 512
@@ -310,14 +298,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3c5ea4c64e08c5479e6f0015d62b338
-      internalID: -4347473097983798614
+      spriteID: fa8c1cec37e40fc43a495f8bfe75bc75
+      internalID: -5030954586376384027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geouch_9
+      name: tallboi_9
       rect:
         serializedVersion: 2
         x: 576
@@ -331,92 +319,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f1f20ac45e4c2047a78e1c6b94f2e7e
-      internalID: 3110260513798024273
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: geouch_10
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9193a81372fa2264cb4adc74ebc0803f
-      internalID: 292643076267146998
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: geouch_11
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0487beebe53df1f41b45611680093955
-      internalID: 995091311754500542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: geouch_12
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f605a6468c587374d8cbd3ce97d1962e
-      internalID: 6664075025237310289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: geouch_13
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b747e954dfe859e4a8fa817eef932aba
-      internalID: 2593871042806088983
+      spriteID: 4c929cd669b1d1345b7622ce17d1c8e1
+      internalID: -6299379394355325740
       vertices: []
       indices: 
       edges: []
