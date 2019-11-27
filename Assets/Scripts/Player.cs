@@ -90,15 +90,6 @@ public class Player : MonoBehaviour
             wallJumpCount = 1;
         }
 
-        /*
-        if (collision.gameObject.CompareTag("ENV_WALL")) {
-            canWallJump = true;
-        } else if (collision.gameObject.CompareTag("ENV_WALL_NOGRIP")) {
-            // Do something?
-        }
-<<<<<<< HEAD
-=======
-        */
 
         if (collision.gameObject.CompareTag("ENV_BREAKABLE")) {
             if (Input.GetKeyDown(action)) {
@@ -107,7 +98,7 @@ public class Player : MonoBehaviour
                 }
             }
         }
->>>>>>> 8b9441da4f75bd0b5e15635cee39c74a3ae2e0ff
+
     }
 
     private void OnCollisionStay2D(Collision2D collision) {
@@ -122,18 +113,8 @@ public class Player : MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, 0f);
             }
         }
-<<<<<<< HEAD
-=======
         */
 
-        if (collision.gameObject.CompareTag("ENV_BREAKABLE")) {
-            if (Input.GetKeyDown(action)) {
-                if (pickaxeLevel >= collision.gameObject.GetComponent<Wall_Breakable_Script>().GetRequiredPickaxeLevel()) {
-                    collision.gameObject.GetComponent<Wall_Breakable_Script>().TakeDamage(1f);
-                }
-            }
-        }
->>>>>>> 8b9441da4f75bd0b5e15635cee39c74a3ae2e0ff
     }
 
     private void OnCollisionExit2D(Collision2D collision) {
