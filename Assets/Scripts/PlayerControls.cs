@@ -16,6 +16,19 @@ public class PlayerControls : PhysicsCust
         spriteRenderer = GetComponent<SpriteRenderer>();
       //  animator = GetComponent<Animator>();
     }
+
+    void Update()
+    {
+        targetVelocity = Vector2.zero;
+        ComputeVelocity();
+        UpdatePlayerAction();
+    }
+
+    protected void UpdatePlayerAction()
+    {
+
+    }
+
     protected override void ComputeVelocity()
     {
         Vector2 move = Vector2.zero;
@@ -34,16 +47,21 @@ public class PlayerControls : PhysicsCust
                 velocity.y = velocity.y * .5f;
             }
         }
-        
-        bool flipSprite = (spriteRenderer.flipX ? (move.x < 0.01f) : (move.x > 0.01f));
-        if (flipSprite)
-        {
-            spriteRenderer.flipX = !spriteRenderer.flipX;
-        }
 
-       // animator.SetBool("grounded", grounded);
-       // animator.SetFloat("velocityX", Mathf.Abs(velocity.x)/maxSpeed);
+        // Ensures Sprite is Facing Correct Direction
+        if (Input.GetAxisRaw("Horizontal") < 0f)
+        {
+                gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            }
+            else if (Input.GetAxisRaw("Horizontal") > 0f)
+            {
+                gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            }
         
+
+        // animator.SetBool("grounded", grounded);
+        // animator.SetFloat("velocityX", Mathf.Abs(velocity.x)/maxSpeed);
+
 
         targetVelocity = move * maxSpeed;
 
