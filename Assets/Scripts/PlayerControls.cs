@@ -8,13 +8,15 @@ public class PlayerControls : PhysicsCust
     public float jumpTakeOffSpeed = 7;
 
     private SpriteRenderer spriteRenderer;
-  //  private Animator animator;
+    private Animator animator;
 
     // Start is called before the first frame update
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-      //  animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
+        animator.SetFloat("speed", 0);
+        animator.SetBool("jumped", false);
     }
 
     void Update()
@@ -38,6 +40,7 @@ public class PlayerControls : PhysicsCust
         if (Input.GetButtonDown("Jump") && grounded)
         {
             velocity.y = jumpTakeOffSpeed;
+            animator.SetBool("jumped", true);
         }
         // Allows jump cancellation
         else if (Input.GetButtonUp("Jump"))
@@ -46,6 +49,11 @@ public class PlayerControls : PhysicsCust
             {
                 velocity.y = velocity.y * .5f;
             }
+        }
+
+        if (!Input.GetButtonDown("Jump") && grounded)
+        {
+            animator.SetBool("jumped", false);
         }
 
         // Ensures Sprite is Facing Correct Direction
@@ -57,12 +65,12 @@ public class PlayerControls : PhysicsCust
             {
                 gameObject.GetComponent<SpriteRenderer>().flipX = true;
             }
-        
+
 
         // animator.SetBool("grounded", grounded);
         // animator.SetFloat("velocityX", Mathf.Abs(velocity.x)/maxSpeed);
 
-
+        animator.SetFloat("speed", velocity.y);
         targetVelocity = move * maxSpeed;
 
     }
