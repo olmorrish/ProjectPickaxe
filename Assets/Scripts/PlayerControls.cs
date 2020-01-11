@@ -15,8 +15,8 @@ public class PlayerControls : PhysicsCust
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        animator.SetFloat("speed", 0);
-        animator.SetBool("jumped", false);
+        animator.SetFloat("SpeedY", 0);
+        animator.SetBool("Jumped", false);
     }
 
     void Update()
@@ -40,7 +40,7 @@ public class PlayerControls : PhysicsCust
         if (Input.GetButtonDown("Jump") && grounded)
         {
             velocity.y = jumpTakeOffSpeed;
-            animator.SetBool("jumped", true);
+            animator.SetBool("Jumped", true);
         }
         // Allows jump cancellation
         else if (Input.GetButtonUp("Jump"))
@@ -53,25 +53,23 @@ public class PlayerControls : PhysicsCust
 
         if (!Input.GetButtonDown("Jump") && grounded)
         {
-            animator.SetBool("jumped", false);
+            animator.SetBool("Jumped", false);
         }
 
         // Ensures Sprite is Facing Correct Direction
         if (Input.GetAxisRaw("Horizontal") < 0f)
         {
-                gameObject.GetComponent<SpriteRenderer>().flipX = false;
-            }
-            else if (Input.GetAxisRaw("Horizontal") > 0f)
-            {
-                gameObject.GetComponent<SpriteRenderer>().flipX = true;
-            }
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+        }
+        else if (Input.GetAxisRaw("Horizontal") > 0f)
+        {
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+        }
 
 
-        // animator.SetBool("grounded", grounded);
+        animator.SetBool("Grounded", grounded);
         // animator.SetFloat("velocityX", Mathf.Abs(velocity.x)/maxSpeed);
-
-        animator.SetFloat("speed", velocity.y);
+        animator.SetFloat("SpeedY", Mathf.Abs(velocity.y)/maxSpeed);
         targetVelocity = move * maxSpeed;
-
     }
 }
