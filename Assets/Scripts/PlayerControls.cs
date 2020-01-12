@@ -16,7 +16,6 @@ public class PlayerControls : PhysicsCust
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         animator.SetFloat("SpeedY", 0);
-        animator.SetBool("Jumped", false);
     }
 
     void Update()
@@ -51,7 +50,7 @@ public class PlayerControls : PhysicsCust
             }
         }
 
-        if (!Input.GetButtonDown("Jump") && grounded)
+        if (velocity.y < 0.1f && grounded)
         {
             animator.SetBool("Jumped", false);
         }
