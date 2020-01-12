@@ -102,20 +102,24 @@ public class PhysicsCust : MonoBehaviour
                         currentNormal.x = 0;
                     }
                 }
-                
+
+
                 // Edge case where player hits roof and must maintain horizontal velocity
+
                 float projection = Vector2.Dot(velocity, currentNormal);
                 if (projection < 0)
                 {
                     velocity = velocity - projection * currentNormal;
+                    Debug.Log("Hit Roof");
                 }
-
+                
                 float modifiedDistance = hitBufferList[i].distance - almostRadius;
                 if (distance > modifiedDistance)
                 {
                     distance = modifiedDistance;
+                    Debug.Log("Mod Dist");
                 }
-
+                
 
             }
 
