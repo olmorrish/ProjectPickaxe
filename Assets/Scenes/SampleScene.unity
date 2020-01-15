@@ -767,6 +767,12 @@ MonoBehaviour:
   minGroundNormalY: 0.65
   maxSpeed: 6
   jumpTakeOffSpeed: 7
+  wallJumpBoost: 2.3
+  action: 101
+  pickAxeRange: 3
+  climbableWallLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!95 &592744373
 Animator:
   serializedVersion: 3
@@ -1753,6 +1759,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform_Tiny
       objectReference: {fileID: 0}
+    - target: {fileID: 5529894955418333742, guid: 09c99d0e2169531468fb8c1a6d099291,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5529894955418333743, guid: 09c99d0e2169531468fb8c1a6d099291,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1970,6 +1981,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall_Tall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3572890037871864309, guid: c09604a9657d80f4387265bf53445e5c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3572890037871864310, guid: c09604a9657d80f4387265bf53445e5c,
         type: 3}
@@ -2411,6 +2427,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall_Tall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3572890037871864309, guid: c09604a9657d80f4387265bf53445e5c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3572890037871864310, guid: c09604a9657d80f4387265bf53445e5c,
         type: 3}

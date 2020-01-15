@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class PlayerControls : PhysicsCust
@@ -71,6 +72,7 @@ public class PlayerControls : PhysicsCust
         return false;
     }
 
+
     protected override void ComputeVelocity()
     {
         Vector2 move = Vector2.zero;
@@ -95,7 +97,7 @@ public class PlayerControls : PhysicsCust
                 }
                 */
 
-                velocity.y = wallJumpBoost * maxSpeed;
+                velocity.y = Math.Abs(velocity.y) + wallJumpBoost * maxSpeed;
                 boosting = true;
                 Debug.Log("boost");
             }
@@ -133,6 +135,7 @@ public class PlayerControls : PhysicsCust
         }
 
 
+        animator.SetFloat("VelocityX", Math.Abs(velocity.x));
         animator.SetBool("Grounded", grounded);
         // animator.SetFloat("velocityX", Mathf.Abs(velocity.x)/maxSpeed);
         animator.SetFloat("SpeedY", Mathf.Abs(velocity.y)/maxSpeed);
