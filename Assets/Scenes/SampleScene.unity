@@ -749,7 +749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60ee903c19c3bf946862da0ff8605369, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravityScale: 1.7
+  gravityScale: 1
   minGroundNormalY: 0.65
 --- !u!114 &592744372
 MonoBehaviour:
@@ -766,7 +766,7 @@ MonoBehaviour:
   gravityScale: 1
   minGroundNormalY: 0.65
   maxSpeed: 6
-  jumpTakeOffSpeed: 10
+  jumpTakeOffSpeed: 13
   wallJumpBoost: 2.3
   action: 101
   pickAxeRange: 1.3
