@@ -1,0 +1,2 @@
+All good tyles are built to 32x32 pixels, however set grid size in project is 16x16.
+Tiles will still replicate well in halves but on a long set remember to still use the full 32 block fro optimal results.
