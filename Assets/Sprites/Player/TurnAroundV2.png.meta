@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 1ddd56e00f423694597024d44285cb30
+guid: 9db4e6d867e362e4ca11386acc31ac8b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -675344483746795506
-    second: P_TurnAround_0
+      213: -5870000657885754630
+    second: TurnAroundV2_0
   - first:
-      213: 6324812572428533066
-    second: P_TurnAround_1
+      213: -5437619804900936910
+    second: TurnAroundV2_1
+  - first:
+      213: 2486530930273331584
+    second: TurnAroundV2_2
+  - first:
+      213: -8573402061270651854
+    second: TurnAroundV2_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -140,7 +146,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: P_TurnAround_0
+      name: TurnAroundV2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -154,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4efbbd33dbf91c4d92b0bdae727ff53
-      internalID: -675344483746795506
+      spriteID: afa09639081998ea0800000000000000
+      internalID: -5870000657885754630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: P_TurnAround_1
+      name: TurnAroundV2_1
       rect:
         serializedVersion: 2
         x: 100
@@ -175,8 +181,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c053106a40385b4f9c00d59c61706da
-      internalID: 6324812572428533066
+      spriteID: 2333041e891b984b0800000000000000
+      internalID: -5437619804900936910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurnAroundV2_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089a6f5f4bee18220800000000000000
+      internalID: 2486530930273331584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurnAroundV2_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c6c55cf38250980800000000000000
+      internalID: -8573402061270651854
       vertices: []
       indices: 
       edges: []
