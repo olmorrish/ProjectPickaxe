@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8584802938996240140}
   - component: {fileID: 8584802938996240143}
   - component: {fileID: 8584802938996240142}
-  - component: {fileID: 8584802938996240137}
   - component: {fileID: 8584802938996240136}
   - component: {fileID: 8584802938996240141}
+  - component: {fileID: 8703766114337290186}
   m_Layer: 0
   m_Name: Grindylow
   m_TagString: Untagged
@@ -107,40 +107,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &8584802938996240137
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8584802938996240139}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.093369395, y: 0.10884261}
-      - {x: -0.123907596, y: 0.20278049}
-      - {x: -0.22055423, y: 0.17099786}
-      - {x: -0.26508498, y: 0.038201094}
-      - {x: -0.21877724, y: -0.25009525}
-      - {x: 0.12525427, y: -0.24993527}
-      - {x: 0.18786821, y: -0.188627}
-      - {x: 0.06416949, y: -0.15518522}
-      - {x: -0.0003188625, y: 0.060778618}
 --- !u!95 &8584802938996240136
 Animator:
   serializedVersion: 3
@@ -174,3 +140,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementForce: 5
   maxHorizontalVelocity: 2
+--- !u!70 &8703766114337290186
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8584802938996240139}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 1}
+  m_Direction: 0

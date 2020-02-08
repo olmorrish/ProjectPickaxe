@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 5246791474786735398}
   - component: {fileID: 5246791474786735399}
   - component: {fileID: 5246791474786735403}
-  - component: {fileID: 5246791474786735396}
   - component: {fileID: 5246791474786735392}
   - component: {fileID: 5246791474786735397}
+  - component: {fileID: 4230707330527176808}
   m_Layer: 0
   m_Name: Cabbage
   m_TagString: Untagged
@@ -107,32 +107,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &5246791474786735396
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5246791474786735393}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.00955607, y: -0.016774356}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.45162877, y: 0.4672464}
-  m_EdgeRadius: 0
 --- !u!95 &5246791474786735392
 Animator:
   serializedVersion: 3
@@ -166,3 +140,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementForce: 5
   maxHorizontalVelocity: 2
+--- !u!70 &4230707330527176808
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246791474786735393}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 1}
+  m_Direction: 0

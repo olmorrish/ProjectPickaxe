@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2250211415197683315}
   - component: {fileID: 2250211415197683316}
   - component: {fileID: 2250211415197683317}
-  - component: {fileID: 2250211415197683318}
   - component: {fileID: 2250211415197683319}
   - component: {fileID: 2250211415197683304}
+  - component: {fileID: 6149649612759820103}
   m_Layer: 0
   m_Name: Sponge
   m_TagString: Untagged
@@ -107,43 +107,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!60 &2250211415197683318
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2250211415197683305}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 0.5, y: 0.75}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.059534594, y: 0.25137544}
-      - {x: -0.0017568618, y: 0.24952435}
-      - {x: -0.17070243, y: 0.21533728}
-      - {x: -0.20312995, y: 0.1233058}
-      - {x: -0.18865499, y: -0.18623126}
-      - {x: -0.17304213, y: -0.21759295}
-      - {x: -0.078128755, y: -0.2499119}
-      - {x: 0.01563479, y: -0.25004697}
-      - {x: 0.12060267, y: -0.21938312}
-      - {x: 0.17263368, y: -0.15624571}
-      - {x: 0.21825159, y: 0.1239903}
-      - {x: 0.18713942, y: 0.15807939}
 --- !u!114 &2250211415197683319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,3 +140,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &6149649612759820103
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2250211415197683305}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 1}
+  m_Direction: 0

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7868273479411487326}
   - component: {fileID: 7868273479411487321}
   - component: {fileID: 7868273479411487320}
-  - component: {fileID: 7868273479411487323}
   - component: {fileID: 7868273479411487322}
   - component: {fileID: 7868273479411487317}
+  - component: {fileID: 9059372863721821130}
   m_Layer: 0
   m_Name: Bugger
   m_TagString: Untagged
@@ -107,48 +107,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &7868273479411487323
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7868273479411487316}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.14999999, y: 0.16}
-      - {x: 0.0017337799, y: 0.32134017}
-      - {x: -0.062003136, y: 0.3217083}
-      - {x: -0.14301936, y: 0.25667137}
-      - {x: -0.13629279, y: 0.11581731}
-      - {x: -0.06, y: 0.01}
-      - {x: -0.11967119, y: -0.03776153}
-      - {x: -0.15993342, y: -0.09994142}
-      - {x: -0.15989082, y: -0.15020737}
-      - {x: -0.050069492, y: -0.3200776}
-      - {x: 0.060064636, y: -0.31983393}
-      - {x: 0.11865457, y: -0.18357873}
-      - {x: 0.12698047, y: 0.031222265}
-      - {x: 0.17373657, y: 0.107643686}
-    - - {x: 0.03, y: -0.19}
-      - {x: -0.015497844, y: -0.024115324}
-      - {x: 0.07342561, y: -0.042978447}
 --- !u!114 &7868273479411487322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,3 +140,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &9059372863721821130
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7868273479411487316}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 2}
+  m_Direction: 0

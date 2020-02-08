@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 8512501031852855252}
   - component: {fileID: 8512501031852855255}
   - component: {fileID: 8512501031852855254}
-  - component: {fileID: 8512501031852855249}
   - component: {fileID: 8512501031852855248}
+  - component: {fileID: 1666573453166711557}
   m_Layer: 0
   m_Name: GreatRoundworm
   m_TagString: Untagged
@@ -49,6 +49,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -125,42 +126,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!60 &8512501031852855249
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8512501031852855251}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.15896218, y: 0.20839708}
-      - {x: -0.08458265, y: 0.31937727}
-      - {x: -0.18878448, y: 0.24927983}
-      - {x: -0.23927009, y: 0.17068768}
-      - {x: -0.33111078, y: 0.090357624}
-      - {x: -0.3299651, y: -0.009739876}
-      - {x: -0.28097114, y: -0.090590164}
-      - {x: -0.0996062, y: -0.32014656}
-      - {x: 0.11973064, y: -0.31993484}
-      - {x: 0.23111074, y: -0.13059013}
-      - {x: 0.22822914, y: 0.08442879}
 --- !u!114 &8512501031852855248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,3 +140,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementForce: 20
   maxHorizontalVelocity: 2
+--- !u!70 &1666573453166711557
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8512501031852855251}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 2, y: 2}
+  m_Direction: 0

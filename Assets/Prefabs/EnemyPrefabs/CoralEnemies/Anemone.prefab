@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6725751405575449903}
   - component: {fileID: 6725751405575449896}
   - component: {fileID: 6725751405575449897}
-  - component: {fileID: 6725751405575449898}
   - component: {fileID: 6725751405575449899}
   - component: {fileID: 6725751405575449908}
+  - component: {fileID: 1569504921329762721}
   m_Layer: 0
   m_Name: Anemone
   m_TagString: Untagged
@@ -107,45 +107,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!60 &6725751405575449898
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6725751405575449909}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 0.5, y: 0.75}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.12697518, y: 0.23725647}
-      - {x: 0.10803008, y: 0.21658015}
-      - {x: -0.14308017, y: 0.21667874}
-      - {x: -0.20834363, y: 0.1259172}
-      - {x: -0.20156151, y: 0.0276106}
-      - {x: -0.17297113, y: -0.121911526}
-      - {x: -0.14481115, y: -0.1971989}
-      - {x: -0.078128755, y: -0.2499119}
-      - {x: 0.031440794, y: -0.25004697}
-      - {x: 0.12060267, y: -0.21938312}
-      - {x: 0.17263368, y: -0.15624571}
-      - {x: 0.23419395, y: 0.0017907321}
-      - {x: 0.2370722, y: 0.15536577}
-      - {x: 0.20125487, y: 0.23651803}
 --- !u!114 &6725751405575449899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,3 +140,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &1569504921329762721
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6725751405575449909}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 1}
+  m_Direction: 0

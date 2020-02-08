@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6214170884713841535}
   - component: {fileID: 6214170884713841534}
   - component: {fileID: 6214170884713841533}
-  - component: {fileID: 6214170884713841532}
   - component: {fileID: 6214170884713841531}
   - component: {fileID: 6214170884713841530}
+  - component: {fileID: 4560428610687086827}
   m_Layer: 0
   m_Name: Deep
   m_TagString: Untagged
@@ -107,46 +107,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!60 &6214170884713841532
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6214170884713841529}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 0.5, y: 0.75}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.15702677, y: 0.00051403046}
-      - {x: -0.25269288, y: -0.0013368925}
-      - {x: -0.3013266, y: -0.08019813}
-      - {x: -0.38196358, y: -0.17362499}
-      - {x: -0.27875456, y: -0.25470448}
-      - {x: -0.15822539, y: -0.30046433}
-      - {x: 0.13982439, y: -0.3202092}
-      - {x: 0.19025373, y: -0.31986523}
-      - {x: 0.31247234, y: -0.3100397}
-      - {x: 0.20756404, y: -0.2481556}
-      - {x: 0.1950814, y: -0.20105538}
-      - {x: 0.20127916, y: -0.120735645}
-      - {x: 0.100446545, y: -0.058879375}
-      - {x: 0.018877506, y: -0.111979805}
-      - {x: -0.037442844, y: -0.11110973}
 --- !u!114 &6214170884713841531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,3 +140,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &4560428610687086827
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6214170884713841529}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.55}
+  m_Size: {x: 2, y: 1}
+  m_Direction: 1

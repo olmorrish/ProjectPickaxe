@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8624923924742876853}
   - component: {fileID: 8624923924742876858}
   - component: {fileID: 8624923924742876859}
-  - component: {fileID: 8624923924742876856}
   - component: {fileID: 8624923924742876857}
   - component: {fileID: 8624923924742876862}
+  - component: {fileID: 3306135073067243795}
   m_Layer: 0
   m_Name: Spider
   m_TagString: Untagged
@@ -107,38 +107,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &8624923924742876856
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8624923924742876863}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.2194944, y: -0.21956158}
-      - {x: 0.25695294, y: -0.010885239}
-      - {x: 0.17412758, y: 0.19925618}
-      - {x: -0.11019492, y: 0.2023716}
-      - {x: -0.18769103, y: -0.06477046}
-      - {x: -0.18679142, y: -0.2500565}
-      - {x: 0.1263265, y: -0.24991012}
 --- !u!114 &8624923924742876857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,3 +140,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &3306135073067243795
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8624923924742876863}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 1}
+  m_Direction: 0
