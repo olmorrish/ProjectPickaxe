@@ -8,6 +8,7 @@ TagManager:
   - ENV_GROUND
   - ENV_BREAKABLE
   - ENV_WALL_NOGRIP
+  - CKS
   layers:
   - Default
   - TransparentFX
