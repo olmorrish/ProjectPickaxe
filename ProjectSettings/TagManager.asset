@@ -8,6 +8,7 @@ TagManager:
   - ENV_GROUND
   - ENV_BREAKABLE
   - ENV_WALL_NOGRIP
+  - GROUND_CHECK
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - 
   - 
   - PlayerCollision
-  - 
+  - ENV_GROUND
   - 
   - 
   - 

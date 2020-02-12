@@ -15,6 +15,10 @@ public class NewPlayerControls : MonoBehaviour {
 
     public float bonusGravity;
 
+	public GameObject groundCheck;
+	public float groundCheckRadius;
+	public LayerMask groundLayer;
+
     private Rigidbody2D rb;
 
     private bool inAir;
@@ -55,6 +59,19 @@ public class NewPlayerControls : MonoBehaviour {
 
     }
 
+	private void CheckInAir() {
+		Collider2D[] groundCollisions = Physics2D.OverlapCircleAll(groundCheck.GetComponent<Transform>().position, groundCheckRadius, 9);
+		if (groundCollisions.Length > 0) {
+			inAir = false;
+		} else {
+			inAir = true;
+		}
+	}
+
+	private void OnDrawGizmos() {
+		Gizmos.DrawSphere(groundCheck.GetComponent<Transform>().position, groundCheckRadius);
+	}
+
     /////////////////////////////
     //    Process Functions    //
     /////////////////////////////
@@ -70,7 +87,7 @@ public class NewPlayerControls : MonoBehaviour {
 
     private void ProcessInput() {
         if (Input.GetAxisRaw("Horizontal") != 0) Move();
-        if (Input.GetKeyDown(keyJump)) Jump();
+        if (Input.GetKeyDown(keyJump) && !inAir) Jump();
     }
 
     // Keep the velocity of the player within the set margins
